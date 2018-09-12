@@ -1,0 +1,23 @@
+{
+  "name": "cryptoauth",
+  "version": "1.0.0",
+  "description": "Universal web-based login module for dApps",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/portis-project/cryptoauth.git"
+  },
+  "keywords": [
+    "blockchain",
+    "ethereum"
+  ],
+  "author": "Itay Radotzki <itay@portis.io>, Tom Teman <tom@portis.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/portis-project/cryptoauth/issues"
+  },
+  "homepage": "https://github.com/portis-project/cryptoauth#readme"
+}
