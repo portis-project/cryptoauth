@@ -95,7 +95,7 @@ var web3 = new Web3(ethProvider);
 ```
 
 ### Portis only
-#### Use Portis is available, no fallback.
+#### Use Portis if available, no fallback.
 
 ```js
 var ethProvider = Cryptoauth.getPortisProvider({ portis: portisConf });
