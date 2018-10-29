@@ -1,6 +1,6 @@
 {
   "name": "cryptoauth",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Universal web-based login module for dApps",
   "main": "lib/index.js",
   "module": "es/index.js",

@@ -39,7 +39,7 @@ function initPortisProvider(options) {
         provider = new Portis.PortisProvider(options.portis);
     }
     else {
-        throw 'You have to import Portis. More info here: https://github.com/portis-project/portis-sdk';
+        throw '[cryptoauth] You have to import Portis. More info here: https://github.com/portis-project/portis-sdk';
     }
     return provider;
 }
@@ -57,10 +57,10 @@ function getPortisProvider(options) {
 }
 function isValidOptions(options) {
     if (!options) {
-        throw '`options` object is required';
+        throw '[cryptoauth] `options` object is required';
     }
     if (!options.portis) {
-        throw '`portis` parameter is required';
+        throw '[cryptoauth] `portis` parameter is required';
     }
 }
 

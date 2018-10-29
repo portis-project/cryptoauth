@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 var Portis;
 try {
     Portis = require('portis');
@@ -7,7 +5,7 @@ try {
 catch (err) {
     Portis = window.Portis;
 }
-function initDappBrowserProvider() {
+export function initDappBrowserProvider() {
     var provider;
     // Modern dapp browsers
     if (window.ethereum) {
@@ -29,16 +27,14 @@ function initDappBrowserProvider() {
     }
     return provider;
 }
-exports.initDappBrowserProvider = initDappBrowserProvider;
-function initPortisProvider(options) {
+export function initPortisProvider(options) {
     var provider;
     if (Portis) {
         provider = new Portis.PortisProvider(options.portis);
     }
     else {
-        throw 'You have to import Portis. More info here: https://github.com/portis-project/portis-sdk';
+        throw '[cryptoauth] You have to import Portis. More info here: https://github.com/portis-project/portis-sdk';
     }
     return provider;
 }
-exports.initPortisProvider = initPortisProvider;
-//# sourceMappingURL=handlers.js.map
+//# sourceMappingURL=initializers.js.map

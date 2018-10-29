@@ -1,4 +1,4 @@
-import { initDappBrowserProvider, initPortisProvider } from './handlers';
+import { initDappBrowserProvider, initPortisProvider } from './initializers';
 export function getProvider(options) {
     isValidOptions(options);
     return initDappBrowserProvider() || getPortisProvider(options);
@@ -12,10 +12,10 @@ export function getPortisProvider(options) {
 }
 function isValidOptions(options) {
     if (!options) {
-        throw '`options` object is required';
+        throw '[cryptoauth] `options` object is required';
     }
     if (!options.portis) {
-        throw '`portis` parameter is required';
+        throw '[cryptoauth] `portis` parameter is required';
     }
 }
 //# sourceMappingURL=index.js.map
