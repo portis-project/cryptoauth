@@ -72,7 +72,7 @@ Please note that the Portis SDK is not included in cryptoauth's dependencies. Yo
 #### Use DApp browser if available, otherwise fallback to Portis.
 
 ```js
-var ethProvider = Cryptoauth.getProvider({ portis: portisConf });
+var ethProvider = cryptoauth.getProvider({ portis: portisConf });
 
 if (!ethProvider) {
     throw 'no available provider';
@@ -85,7 +85,7 @@ var web3 = new Web3(ethProvider);
 #### Use DApp browser if available, no fallback.
 
 ```js
-var ethProvider = Cryptoauth.getDappBrowserProvider();
+var ethProvider = cryptoauth.getDappBrowserProvider();
 
 if (!ethProvider) {
     throw 'no available provider';
@@ -98,7 +98,7 @@ var web3 = new Web3(ethProvider);
 #### Use Portis if available, no fallback.
 
 ```js
-var ethProvider = Cryptoauth.getPortisProvider({ portis: portisConf });
+var ethProvider = cryptoauth.getPortisProvider({ portis: portisConf });
 
 if (!ethProvider) {
     throw 'no available provider';
